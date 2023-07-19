@@ -1,123 +1,306 @@
 /* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Global Design */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #395144;
 }
 
-h1, h2, h3 {
-    font-weight: bold;
+h1,
+h2,
+h3 {
+  font-weight: bold;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
-    line-height: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: normal;
 }
 
 h1 {
-    font-size: 48.83px;
+  font-size: 48.83px;
 }
 
 h2 {
-    font-size: 39.06px;
+  font-size: 39.06px;
 }
 
 h3 {
-    font-size: 31.25px;
+  font-size: 31.25px;
 }
 
-p, a {
-    font-size: 16px;
-    line-height: 2;
+p,
+a {
+  font-size: 16px;
+  line-height: 2;
 }
 
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 /* Utility Classes */
 .text-shadow {
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Styles Declaration */
-.box, .box__nav {
-    display: flex;
+/* Home Page Styling */
+.box,
+.box__nav {
+  display: flex;
 }
 
 .box {
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/lukas-blazek-f-TWhXOrLiU-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .box__title {
-    color: white;
+  color: white;
 }
 
 .nav__link {
-    color: white;
-    background-color: transparent;
-    padding: 8px;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
+  color: white;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav__link:hover {
-    background-color: #dd7230;
+  background-color: #dd7230;
+}
+
+/* Recipe Page Styling */
+.recipe {
+  width: 70vw;
+  background-color: #395144;
+  margin: auto;
+}
+
+.recipe__title {
+  font-size: 48.83px;
+  color: #f0ebce;
+  padding: 32px 0px 16px 0px;
+}
+
+.recipe__img {
+  display: block;
+  width: 600px;
+  height: auto;
+  margin: auto;
+  padding: 0px 0px 32px 0px;
+}
+
+.recipe__description,
+.recipe__ingredients,
+.recipe__steps {
+  padding: 32px 32px 32px 32px;
+}
+
+.recipe__title,
+.description__title,
+.ingredients__title,
+.steps__title {
+  font-weight: bold;
+  text-align: center;
+  line-height: normal;
+}
+
+.description__title,
+.ingredients__title,
+.steps__title {
+  margin: 0px 0px 16px 0px;
+}
+
+.ingredients__list,
+.steps__list {
+  padding: 0px 0px 0px 40px;
+}
+
+.description__txt,
+.list__item {
+  line-height: 1.5;
+}
+
+.recipe__description {
+  background-color: #f0ebce;
+}
+
+.description__title {
+  font-size: 39.06px;
+  color: #395144;
+}
+
+.description__txt {
+  color: #395144;
+}
+
+.recipe__ingredients {
+  background-color: #aa8b56;
+}
+
+.ingredients__title {
+  font-size: 31.25px;
+  color: #f0ebce;
+}
+
+.ingredients__list {
+  list-style-type: disc;
+  color: #f0ebce;
+}
+
+.recipe__steps {
+  background-color: #4e6c50;
+}
+
+.steps__title {
+  font-size: 31.25px;
+  color: #f0ebce;
+}
+
+.steps__list {
+  list-style-type: number;
+  color: #f0ebce;
 }
