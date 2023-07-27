@@ -1,7 +1,5 @@
 # Odin Recipes
 
-Welcome to Odin Recipes, a simple recipe website showcasing foundational skills in HTML and CSS.
-
 ## Table of Contents
 
 - [Introduction](#introduction)
