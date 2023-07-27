@@ -3,10 +3,9 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [What is Odin Recipes?](#what-is-odin-recipes?)
-- [Why I Started This Project](#why-i-started-this-project)
 - [Demo](#demo)
 - [Acknowledgments](#acknowledgments)
+- [Contribution and Feedback](#contributions-and-feedback)
 
 ## Introduction
 
